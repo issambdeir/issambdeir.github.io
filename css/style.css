@@ -344,14 +344,6 @@ section h2 {
   margin: 0 auto 24px;
 }
 
-/* Contact */
-.contact-links {
-  display: flex;
-  gap: 24px;
-  font-weight: 600;
-  flex-wrap: wrap;
-}
-
 /* Footer */
 .site-footer {
   text-align: center;
@@ -359,6 +351,15 @@ section h2 {
   color: var(--text-muted);
   font-size: 0.85rem;
   border-top: 1px solid var(--border);
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-weight: 600;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 
 @media (max-width: 600px) {
