@@ -15,7 +15,7 @@ const projects = [
     name: "ATP Tennis Scheduler",
     description: "A Python simulation that generates realistic ATP tournament draws (Grand Slam, ATP 1000/500/250) using real seeding rules, then schedules matches across courts and days based on player rankings, weather, and time-of-day preferences.",
     tags: ["Python"],
-    image: "",
+    image: "images/atp-tennis-scheduler.svg",
     liveUrl: "",
     codeUrl: "https://github.com/issambdeir/atp-tennis-scheduler",
   },
