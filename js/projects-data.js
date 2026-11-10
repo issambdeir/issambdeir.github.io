@@ -20,11 +20,11 @@ const projects = [
     codeUrl: "https://github.com/issambdeir/atp-tennis-scheduler",
   },
   {
-    name: "Project Three",
-    description: "Replace this with a one or two sentence description of what the project does and why you built it.",
-    tags: ["React", "Node.js"],
-    image: "",
+    name: "Vela",
+    description: "A React Native (Expo) health app that lets people log their symptoms over time, view them on a timeline, and generate a clean PDF report to share with a doctor. Built with Supabase for auth/data and RevenueCat for subscriptions.",
+    tags: ["React Native", "Expo", "TypeScript", "Supabase"],
+    image: "images/vela.svg",
     liveUrl: "",
-    codeUrl: "",
+    codeUrl: "https://github.com/issambdeir/vela",
   },
 ];
