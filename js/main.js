@@ -1,37 +1,29 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Theme toggle, persisted per-visitor via localStorage.
-const themeToggle = document.getElementById("theme-toggle");
-const root = document.documentElement;
+// Skills
+const skillsGroupsEl = document.getElementById("skills-groups");
 
-function applyTheme(theme) {
-  root.setAttribute("data-theme", theme);
-  themeToggle.textContent = theme === "dark" ? "☀️" : "🌙";
+function renderSkills(groups) {
+  skillsGroupsEl.innerHTML = groups
+    .map((g) => {
+      const pills = g.items.map((item) => `<span class="skill-pill">${item}</span>`).join("");
+      return `
+        <div class="skill-group">
+          <h3>${g.category}</h3>
+          <div class="skill-pills">${pills}</div>
+        </div>
+      `;
+    })
+    .join("");
 }
 
-try {
-  const saved = localStorage.getItem("theme");
-  if (saved) applyTheme(saved);
-} catch (e) {
-  // localStorage unavailable (private browsing, etc.) — fall back to system theme.
-}
+renderSkills(skillGroups);
 
-themeToggle.addEventListener("click", () => {
-  const current = root.getAttribute("data-theme") === "dark" ? "dark" : "light";
-  const next = current === "dark" ? "light" : "dark";
-  applyTheme(next);
-  try {
-    localStorage.setItem("theme", next);
-  } catch (e) {
-    // ignore
-  }
-});
-
-// Render project cards from js/projects-data.js
-const grid = document.getElementById("projects-grid");
+// Projects
+const projectsGrid = document.getElementById("projects-grid");
 
 function renderProjects(list) {
-  grid.innerHTML = list
+  projectsGrid.innerHTML = list
     .map((p) => {
       const imageHtml = p.image
         ? `<img src="${p.image}" alt="${p.name} screenshot" />`
@@ -61,3 +53,24 @@ function renderProjects(list) {
 }
 
 renderProjects(projects);
+
+// Hobbies
+const hobbiesGrid = document.getElementById("hobbies-grid");
+
+function renderHobbies(list) {
+  hobbiesGrid.innerHTML = list
+    .map(
+      (h) => `
+        <div class="hobby-card">
+          <div class="hobby-card-body">
+            <div class="hobby-icon">${h.icon || "⭐"}</div>
+            <h3>${h.name}</h3>
+            <p>${h.description}</p>
+          </div>
+        </div>
+      `
+    )
+    .join("");
+}
+
+renderHobbies(hobbies);

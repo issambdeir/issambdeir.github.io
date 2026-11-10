@@ -4,9 +4,12 @@ A simple, no-build-step portfolio site: plain HTML, CSS, and JS.
 
 ## Editing
 
-- **Your name, bio, tagline, contact links:** edit `index.html` directly (look for "Your Name", the hero subtitle, and the links in the Contact section).
+- **Name, bio, tagline, contact links:** edit `index.html` directly (look for the hero, About, and Contact sections).
 - **Projects:** edit `js/projects-data.js`. Each project is one object in the `projects` array — copy an existing one and fill in your own `name`, `description`, `tags`, `image`, `liveUrl`, and `codeUrl`. Leave `image` as `""` to use an auto-generated placeholder, or point it at a file in `images/` (e.g. `"images/my-project.png"`). Leave `liveUrl` or `codeUrl` as `""` to hide that link.
-- **Colors/theme:** edit the CSS variables at the top of `css/style.css` (`:root` and the dark-mode blocks).
+- **Skills:** edit `js/skills-data.js` — group skills under whatever categories make sense.
+- **Hobbies:** edit `js/hobbies-data.js` — one object per hobby, with an emoji icon.
+- **Resume:** drop your resume PDF into this folder named `resume.pdf` (the Resume section's download button already points to it).
+- **Colors/theme:** edit the CSS variables at the top of `css/style.css` (`:root`). The site is dark-mode only.
 
 No build step — just save and refresh the page.
 

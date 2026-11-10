@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Issam Bdeir — Portfolio</title>
   <meta name="description" content="Portfolio of projects by Issam Bdeir, Industrial Engineering major with an AI minor." />
+  <meta name="color-scheme" content="dark" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -14,10 +15,12 @@
       <a href="#home" class="logo">Issam Bdeir</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#resume">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" type="button">🌙</button>
     </nav>
   </header>
 
@@ -41,11 +44,35 @@
       </p>
     </section>
 
+    <section id="skills" class="skills container">
+      <h2>Skills</h2>
+      <p class="section-hint">Edit <code>js/skills-data.js</code> to update these.</p>
+      <div id="skills-groups" class="skills-groups">
+        <!-- Rendered by js/main.js from js/skills-data.js -->
+      </div>
+    </section>
+
     <section id="projects" class="projects container">
       <h2>Projects</h2>
-      <p class="projects-hint">These are placeholder projects — edit <code>js/projects-data.js</code> to add your own.</p>
+      <p class="section-hint">These are placeholder projects — edit <code>js/projects-data.js</code> to add your own.</p>
       <div id="projects-grid" class="projects-grid">
         <!-- Rendered by js/main.js from js/projects-data.js -->
+      </div>
+    </section>
+
+    <section id="hobbies" class="hobbies container">
+      <h2>Hobbies &amp; Interests</h2>
+      <p class="section-hint">Edit <code>js/hobbies-data.js</code> to update these.</p>
+      <div id="hobbies-grid" class="hobbies-grid">
+        <!-- Rendered by js/main.js from js/hobbies-data.js -->
+      </div>
+    </section>
+
+    <section id="resume" class="resume container">
+      <h2>Resume</h2>
+      <div class="resume-card">
+        <p>Download a copy of my resume to see my full background, experience, and coursework.</p>
+        <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
       </div>
     </section>
 
@@ -64,6 +91,8 @@
     <p>&copy; <span id="year"></span> Issam Bdeir. Built with HTML, CSS &amp; JS.</p>
   </footer>
 
+  <script src="js/skills-data.js"></script>
+  <script src="js/hobbies-data.js"></script>
   <script src="js/projects-data.js"></script>
   <script src="js/main.js"></script>
 </body>
