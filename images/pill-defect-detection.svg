@@ -1,0 +1,54 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="accentGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b7bff" />
+      <stop offset="100%" stop-color="#5ee6c8" />
+    </linearGradient>
+    <radialGradient id="glow2" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#8b7bff" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#8b7bff" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="heat" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff6b5e" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#ff6b5e" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ff6b5e" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="240" fill="#14151c" />
+  <circle cx="200" cy="120" r="140" fill="url(#glow2)" />
+
+  <!-- Neural net motif, top-left -->
+  <g opacity="0.55" stroke="url(#accentGrad2)" stroke-width="1.2">
+    <line x1="30" y1="40" x2="70" y2="30" />
+    <line x1="30" y1="40" x2="70" y2="55" />
+    <line x1="30" y1="65" x2="70" y2="55" />
+    <line x1="30" y1="65" x2="70" y2="30" />
+    <line x1="70" y1="30" x2="105" y2="45" />
+    <line x1="70" y1="55" x2="105" y2="45" />
+  </g>
+  <g fill="url(#accentGrad2)">
+    <circle cx="30" cy="40" r="3.5" />
+    <circle cx="30" cy="65" r="3.5" />
+    <circle cx="70" cy="30" r="3.5" />
+    <circle cx="70" cy="55" r="3.5" />
+    <circle cx="105" cy="45" r="3.5" />
+  </g>
+
+  <!-- Pill capsule -->
+  <g transform="translate(200,118) rotate(-18)">
+    <rect x="-70" y="-24" width="140" height="48" rx="24" fill="#1b1c25" stroke="url(#accentGrad2)" stroke-width="2.5" />
+    <path d="M 0 -24 L 0 24" stroke="url(#accentGrad2)" stroke-width="2" opacity="0.6" />
+    <rect x="-70" y="-24" width="70" height="48" rx="24" fill="url(#accentGrad2)" opacity="0.18" />
+    <!-- defect heatmap -->
+    <circle cx="28" cy="2" r="22" fill="url(#heat)" />
+    <circle cx="28" cy="2" r="5" fill="#ff6b5e" />
+  </g>
+
+  <!-- Scan frame -->
+  <rect x="120" y="60" width="160" height="120" rx="6" fill="none" stroke="#5ee6c8" stroke-width="1" stroke-dasharray="5 5" opacity="0.4" />
+
+  <text x="200" y="222" text-anchor="middle" font-family="Sora, sans-serif" font-size="13" fill="#9a9ea8" letter-spacing="1">
+    PILL DEFECT DETECTION
+  </text>
+</svg>

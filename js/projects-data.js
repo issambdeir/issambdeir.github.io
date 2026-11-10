@@ -4,12 +4,12 @@
 
 const projects = [
   {
-    name: "Project One",
-    description: "Replace this with a one or two sentence description of what the project does and why you built it.",
-    tags: ["JavaScript", "CSS"],
-    image: "",
+    name: "Pill Defect Detection",
+    description: "A deep learning project that fine-tunes a ResNet-18 to classify pill images as good or defective, picks a decision threshold based on the real-world cost of each kind of mistake, and uses Grad-CAM to visualize where the model sees the defect.",
+    tags: ["Python", "PyTorch", "Deep Learning"],
+    image: "images/pill-defect-detection.svg",
     liveUrl: "",
-    codeUrl: "https://github.com/yourusername/project-one",
+    codeUrl: "https://github.com/issambdeir/pill-defect-detection",
   },
   {
     name: "ATP Tennis Scheduler",
