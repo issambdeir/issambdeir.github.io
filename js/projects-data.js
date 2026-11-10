@@ -12,12 +12,12 @@ const projects = [
     codeUrl: "https://github.com/yourusername/project-one",
   },
   {
-    name: "Project Two",
-    description: "Replace this with a one or two sentence description of what the project does and why you built it.",
+    name: "ATP Tennis Scheduler",
+    description: "A Python simulation that generates realistic ATP tournament draws (Grand Slam, ATP 1000/500/250) using real seeding rules, then schedules matches across courts and days based on player rankings, weather, and time-of-day preferences.",
     tags: ["Python"],
     image: "",
     liveUrl: "",
-    codeUrl: "",
+    codeUrl: "https://github.com/issambdeir/atp-tennis-scheduler",
   },
   {
     name: "Project Three",
