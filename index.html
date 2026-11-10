@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of projects by Your Name." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#home" class="logo">Your Name</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" type="button">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <h1>Hi, I'm <span class="accent">Your Name</span>.</h1>
+      <p class="hero-subtitle">Edit this tagline in <code>index.html</code> — e.g. "Software engineer building things on the web."</p>
+      <div class="hero-links">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About</h2>
+      <p>
+        Write a short bio here — who you are, what you work on, and what you're
+        looking for. Two or three sentences is plenty.
+      </p>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <p class="projects-hint">These are placeholder projects — edit <code>js/projects-data.js</code> to add your own.</p>
+      <div id="projects-grid" class="projects-grid">
+        <!-- Rendered by js/main.js from js/projects-data.js -->
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Get in Touch</h2>
+      <p>Edit these links in <code>index.html</code> to point to your own profiles.</p>
+      <div class="contact-links">
+        <a href="mailto:you@example.com">Email</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS &amp; JS.</p>
+  </footer>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
